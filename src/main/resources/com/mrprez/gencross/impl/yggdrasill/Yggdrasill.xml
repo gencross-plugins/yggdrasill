@@ -1,0 +1,2503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personnage name="Yggdrasill" version="1.2" gencrossVersion="1.10"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="http://mrprez.dyndns.org:8080/gencross-web/gencross-plugin.xsd">
+	<phase name="archétype"/>
+	<phaseList>
+		<phase name="archétype"/>
+		<phase name="création"/>
+		<phase name="valide"/>
+	</phaseList>
+	<pointPools>
+		<pool name="Caractéristiques" remaining="10" toEmpty="false" total="10"/>
+		<pool name="Don" remaining="1" toEmpty="false" total="1"/>
+		<pool name="Compétences" remaining="35" toEmpty="false" total="35"/>
+		<pool name="Prouesses et Magie" remaining="12" toEmpty="false" total="12"/>
+	</pointPools>
+	<properties>
+		<property editable="true" name="Prenom">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property editable="true" name="Nom du parent">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property editable="true" name="Nom complet">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property editable="true" name="Royaume">
+			<Value class="com.mrprez.gencross.value.StringValue">Danemark</Value>
+			<valueChoice>
+				<Value class="com.mrprez.gencross.value.StringValue">Danemark</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Finland</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Götaland</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Svithjodh</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Norvège</Value>
+			</valueChoice>
+		</property>
+		<property editable="true" name="Archétype">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			<valueChoice>
+				<Value class="com.mrprez.gencross.value.StringValue">[Noble] Jarl</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Noble] Chef de Guerre</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Noble] Conseiller du Seigneur</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Guerrier] Hirdmen</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Guerrier] Berserkr-Ulfhedinn</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Guerrier] Berserkr-Svinfylkingar</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Guerrier] Mercenaire</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Sage] Völva</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Sage] Thulr</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Sage] Scalde</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Sage] Soigneur</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Travailleur] Artisan</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Travailleur] Fermier</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Travailleur] Forestier</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Travailleur] Mineur</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Voyageur] Marchand</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Voyageur] Emissaire</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Voyageur] Forgeron Itinérant</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">[Voyageur] Espion</Value>
+			</valueChoice>
+			<comment><![CDATA[[Noble] Jarl: Le jarl dirige le clan. Il est à la tête d'une communauté plus ou moins importante à laquelle il assure sa protection. Dans ce but, il solde sur ses fonds propres une armée privée , constituée de hirdmen. Le jarl dirige les opérations militaires et organise la vie politique en accord avec le thing. Ce noble de haut rang est l'incarnation des valeurs qu'il représente. 
+
+[Noble] Chef de Guerre: Ce noble prend la tête des troupes lorsque le jarl décide de mener une guerre, qu'il s'agisse d'effectuer un raid contre un voisin ou de défendre ses terres. Rompu aux tactiques militaires, le chef de guerre est également par lui-même un excellent combattant. Lorsque le jarl prend directement le contrôle de l'armée, ce personnage se trouve alors à commander un groupe de combat. 
+
+[Noble] Conseiller du Seigneur: Le jarl s'entoure souvent de membres du clan les plus sages et les plus expérimentés. Ceux-ci l'aident à prendre les meilleures décisions pour la communauté. Hommes de confiance, les conseillers jouent également le rôle de diplomates et d'émissaires lorsque des missions d'ambassade se révèlent nécessaires. A ces occasions, ils se transforment en bien en souvent en espions, devenant alors les yeux et les oreilles de leur chef. 
+
+[Guerrier] Hirdmen: Soldat loyalement attaché à son jarl ou mercenaire louant son épée, les hirdmen sont avant tout des guerriers professionnels qui vivent de leurs compétences de combat souvent remarquables. En période de paix, ils assurent tout de même la sécurité des routes commerciales et du domaine de leur seigneur. Missions d'escorte de personnalités du clan et traque de brigands ou de bêtes sauvages font également partie de leurs attributions. Dès que la guerre est déclarée, les hirdmen forment le gros et l'élite des troupes. 
+
+[Guerrier] Berserkr: "Ces guerriers sauvages et redoutés, à juste titre, constituent la garde rapprochée du jarl. Bien que leurs prouesses martiales ne puissent être mises en doute, leurs manières et leur arrogance suffisent à leur aliéner les populations auxquelles ils se mêlent. Les gens les trouvent sales et répugnants, mal élevés et imprévisibles, mais qui oseraient le leur dire en face? Note : Afin d'incarner un berserkr ou un autre guerrier voué à Odhinn, vous devez choisir obligatoirement pour votre personnage le don ""guerrier fauve""" 
+
+[Guerrier] Mercenaire: Issus d'un clan déchu, guerriers étrangers à la Scandia, vagabonds qui n'ont plus que leur épée pour les nourrir, les mercenaires louent leur services aux plus offrants. La majeure partie d'entre eux ne trouve un emploi que lorsque la saison des guerres ravage le pays. Ils grossissent alors les armées des jarl et nombreux sont ceux qui meurent avant d'avoir fait fortune. En temps de paix, quand aucun engagement ne se présente, les mercenaires se font volontiers brigands. 
+
+[Sage] Völva: C'est un don qui se transmet de mère en fille dans certaines familles. L'attention d'Odhinn désigne ces lignées comme louées au service de l'expression des dieux. Les völva s'efforcent de mener des vies normales au sein de leur communauté, mais elles portent également la voix des Ases et des Vanes et, à travers les sorts, répondent aux questions des membres du clan. Intérpreter les signes, déduire la trame du destin dans les osselets, voilà un bien grand poids sur de frêles épaules. 
+
+[Sage] Thulr: Connaisseur de la nature et de ses secrets, détenteurs des rites sacrés et anciens, présidant souvent les cérémonies funèbres, le thulr est une personnalité paradoxale. Au sein de son clan, il est tout aussi respecté que craint. Il sait, grâce à ses incantations et ses remèdes naturels, soigner les hommes ou les animaux malades. Mais on raconte également qu'il parle aux morts et jette le mauvais oeil sur ceux qui ont le malheur de lui déplaire. Quoi qu'il en soit, le thulr dérange surtout par son obstination à demeurer en marge de la communauté, isolé dans ces endroits sauvages qu'il apprécie tant. 
+
+[Sage] Scalde: Nul exploit ne deviendrait légende si aucun scalde ne venait le conter. Bien plus qu'un amuseur destiné à distraire le seigneur et sa suite par ses récits enflammés ou sa musique subtile, le scalde représente avant tout la mémoire de la Scandia. Celle de ses héros et leurs destins parfois glorieux, souvent tragiques, celles des dieux et de leurs frasques. Itinérant ou soldé par un mécène, le scalde est un artiste accompli, un véritable érudit connaissant les légendes et les héros du passé, qui n'hésite pas à aller lui-même au devant de l'aventure pour peu qu'il puisse en tirer une bonne histoire. 
+
+[Sage] Soigneur: Homme ou femme libre occupant sa place au sein du clan, le soigneur est également détenteur d'un savoir médical accumulé depuis des lustres par ses ancêtres et transmis de génération en génération. Il n'y a nulle magie dans sa pratique, mais une bonne connaissance du corps et de son fonctionnement. le soigneur sait comment réduire une fracture, fermer une plaie et combattre une infection. il connaît le rôle des organes et les remèdes qui soulagent leurs maux. Il ne se sent pas en concurrence avec le thulr, mais voit plutôt une complémentarité dans les deux approches. Après tout, le soigneur exerce une médecine des hommes, le thulr guérit grâce aux dons des dieux. 
+
+[Travailleur] Artisan: La plupart des habitants de la Scandia sont capables de fabriquer les menus ustensiles du quotidien par eux-mêmes. Cependant, les compétences de l'artisan spécialisé vont bien au-delà de ces réalisations simplistes. Maîtrisant parfaitement toutes les ficelles de son métier, il redouble d'effort pour donner à chacune de ses créations un caractère unique. Même l'objet le plus banal prend entre ses mains un aspect d'oeuvre d'art. 
+
+[Travailleur] Fermier: Homme libre, le fermier est l'élément de base de chaque communauté. Il exploite la terre du clan et en tire les ressources nécessaires à sa survie. Eleveur, agriculteur, il peut aussi prendre les armes lorsque le jarl convoque ses vassaux pour la guerre ou lorsque son domaine et les siens sont en danger. 
+
+[Travailleur] Forestier: Vivant à la lisière des terres exploitées par son clan, le forestier et sa famille exploitent cette immense ressource que représentent les forêts des terres nordiques. Il produit le bois et le charbon de bois utiles à la communauté. Mais il joue également le rôle de garde-chasse et veille à ce que le gibier ne fasse jamais défaut. Enfin, face aux immensités sylvestres où résident tant de créatures hostiles, il endosse également la responsabilité de donner l'alerte en cas de danger. 
+
+[Travailleur] Mineur: La stéatite, la pierre, les métaux précieux, le fer, le cuivre et bien d'autres éléments sont extraits des entrailles de la terre. Des communautés se forment autour des gisements découverts et parfois ne perdurent que le temps de leur exploitation jusqu'à épuisement du filon. Dans les mines, le travail est dur, harassant, mais souvent bien rétribué. Chaque clan veille jalousement sur les gisements qui lui appartiennent et protègent ceux qui les exploitent. Précaution utile car les ressources se trouvent bien souvent dans des zones sauvages et hostiles. 
+
+[Voyageur] Marchand: Aucune communauté, aucune cité ne peut se développer sans le commerce. Troquant ici des denrées de base, vendant là des produits manufacturés par les meilleurs artisans de la Scandia, ou d'ailleurs, le marchand tisse un lien entre les peuples des Terres du Nord. Plus qu'un simple négociant, il est également un aventurier qui n'hésite pas à explorer de nouvelles routes commerciales potentielles. A l'occasion, il se fait même espion au service du jarl de son clan, notant de ses yeux avisés les éléments importants en vue d'un raid prochain. 
+
+[Voyageur] Emissaire: Habile diplomate, fidèle et loyal conseiller du seigneur, l'émissaire représente une figure incontournable de l'échiquier politique de la Scandia. Chargé de transmettre les messages du roi ou de négocier les traités et serments, il est grand voyageur au fait des coutumes de nombreuses régions du Nord. Son réseau d'informateurs et de relations font de l'émissaire une personnalité incontournable dès qu'un événement majeur se profile à l'horizon. 
+
+[Voyageur] Forgeron Itinérant: Artisan spécialisé, il excelle dans la création d'armes et d'armures prisées par les jarls et les hirdmen. Dans les Royaumes du Nord perpétuellement en conflit, il ne manque jamais de travail. Bien qu'il soit capable de produire une grande quantité de pièce en un temps assez court, le forgeron itinérant sait également rendre chacune d'elle unique grâce à l'incrustation de métaux précieux ou en traçant des gravures siomptueuses. Bien souvent, sa réputation précède son arrivée dans chaque nouvelle communauté. 
+
+[Voyageur] Espion: Aucun monarque sensé ne se priverait des services d'un bon réseau d'espions. Que manigancent leurs ambitieux voisins ? Quelles défenses gardent le port que le roi projette d'attaquer et de piller une fois la belle saison revenue ? Quel vassal complote dans on dos ? De quels moyens disposent ses rivaux ? Voilà autant de questions auxquelles un espion efficace et loyale apportera des réponses pour son souverain.]]>
+			</comment>
+		</property>
+		<property editable="true" name="Age">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property editable="true" name="Taille">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property editable="true" name="Poids">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property editable="true" name="Don(s)">
+			<propertiesList fixe="false" open="false">
+				<propertyChoice>
+					<property editable="false" name="Adroit">
+						<comment>Le personnage est très habile de ses mains. Dès qu'il confectionne une pièce d'artisanat, son don révèle toute son ampleur.</comment>
+					</property>
+					<property editable="false" name="Agile">
+						<comment>Le héros est très souple et maîtrise parfaitement ses mouvements. Ce don s'avère très utile pour toute activité physique nécessitant une grande coordination.</comment>
+					</property>
+					<property editable="false" name="Affinité">
+						<comment>Le personnage se montre particulièrement sensible à l'une des formes de magie (Galdr, Sejdr ou Runes). Le joueur sélectionne son domaine de prédilection à la création du héros.</comment>
+					</property>
+					<property editable="false" name="Ambidextre">
+						<comment>Le personnage est aussi à l'aise de la main droite que de la main gauche. Il ne subit jamais de pénalité pour l'utilisation de sa mauvaise main.</comment>
+					</property>
+					<property editable="false" name="Avenant">
+						<comment>Le personnage bénéficie d'un beau visage et d'un corps parfait. Ce don intervient lorsque l'apparence physique compte plus que l'aspect relationnel, comme pour une bonne première impression par exemple.</comment>
+					</property>
+					<property editable="false" name="Bagarreur">
+						<comment>Le héros aime se battre et lutter à mains nues. il possède une bonne technique et une aisance naturelle dans ce genre de situation qui lui permettent de faire la différence au moment critique.</comment>
+					</property>
+					<property editable="false" name="Bénédiction du Destin">
+						<comment>Le personnage jouit d'une d'une chance insolente. Lorsque le hasard s'en mêle (lors d'un jet de dés par exemple), ce don intervient. De plus, le héros ne perd jamais au tirage de la courte paille.</comment>
+					</property>
+					<property editable="false" name="Brave">
+						<comment>Le héros démontre à chaque occasion l'étendue de son courage. Peu de choses sont capables de faire naître la peur dans son cœur.</comment>
+					</property>
+					<property editable="false" name="Cavalier">
+						<comment>Le personnage est particulièrement à l'aise avec les chevaux. Il monte très bien et sait parfaitement s'occuper de ces animaux ou reconnaître sans erreur une rosse d'une bonne bête.</comment>
+					</property>
+					<property editable="false" name="Colosse">
+						<comment>Le personnage est un géant parmi les siens et doté d'une force peu commune. Qu'il s'agisse d'intimider ses interlocuteurs ou d'effectuer un travail de force intense, il est l'homme de la situation.</comment>
+					</property>
+					<property editable="false" name="Corps de Fer">
+						<comment>Le héros se montre très résistant aux coups. Il bénéficie d'un D10 supplémentaire lorsqu'il doit encaisser un choc.</comment>
+					</property>
+					<property editable="false" name="Don de Freyr/Freyja">
+						<comment>Le personnage est un séducteur. Il choisit ses mots, ses attitudes et se compose une façade propre à s'attirer la sympathie, voire l'amour, des autres.</comment>
+					</property>
+					<property editable="false" name="Discret">
+						<comment>Le personnage sait se montrer silencieux, se fondre dans une foule ou faire en sorte que personne ne remarque sa présence quand il cherche à se cacher.</comment>
+					</property>
+					<property editable="false" name="Eloquent">
+						<comment>Le héros possède le don des mots. Il sait présenter ses arguments, les enrober et rallier ainsi l'avis des autres au sien.</comment>
+					</property>
+					<property editable="false" name="Elu de Njördr">
+						<comment>Le personnage est particulièrement à l'aise sur les étendues maritimes de la Scandia. C'est un marin né, guidé par la main du dieu de la mer.</comment>
+					</property>
+					<property editable="false" name="Empathie">
+						<comment>Le personnage est très sensible aux états émotionnels des autres. Il décèle facilement leurs humeurs et parfois sent instinctivement si on tente de lui mentir.</comment>
+					</property>
+					<property editable="false" name="Erudit">
+						<comment>Le héros possède une grande culture générale et une vaste connaissance de la Scandia. Il connaît de nombreuses anecdotes au sujet de ses légendes, de son histoire et de sa géographie, de ses personnalités.</comment>
+					</property>
+					<property editable="false" name="Frère de Mimir">
+						<comment>Le personnage est capable d'une très grande sagesse. Face à une situation requérant une analyse pertinente ou nécessitant de prendre du recul pour trancher un dilemme, il trouve souvent la solution la plus sage.</comment>
+					</property>
+					<property editable="false" name="Guerrier-Fauve">
+						<comment>Le personnage a reçu le don d'Odhinn. Il est capable d'atteindre l'état de transe de combat accordé par le Père des Dieux. Le joueur sélectionne à la création du héros son type : berserkr, ulfhedinn ou svinfylkingar.</comment>
+					</property>
+					<property editable="false" name="Guidé par Thorr">
+						<comment>Le bras du personnage semble animé par l'énergie du dieu de la foudre. Au combat, il se montre capable de frapper des coups terribles.</comment>
+					</property>
+					<property editable="false" name="Homme des Bois">
+						<comment>Le personnage est particulièrement à son aise au milieu des étendues sauvages de la Scandia. Il ne se perd jamais et sait survivre même seul au milieu d'une forêt.</comment>
+					</property>
+					<property editable="false" name="Initié">
+						<comment>Le personnage a reçu le don de la compréhension des énergies divines qui circulent dans Midgardr. Il peut pratiquer la magie, Galdr, Sejdr et Runes selon son approche (scalde, völva ou thulr).</comment>
+					</property>
+					<property editable="false" name="Inspiré">
+						<comment>Le personnage possède une âme d'artiste. Il réalide des œuvres magnifiques promptes à fasciner ceux qui en sont les spectateurs.</comment>
+					</property>
+					<property editable="false" name="Masque de Loki">
+						<comment>Le héros bénéficie d'un don inné pour jouer la comédie ou mentir à l'insu de tous. Il peut aisni avancer n'importe quel argument, endosser une autre personnalité, avec un naturel déconcertant.</comment>
+					</property>
+					<property editable="false" name="Mémoire Parfaite">
+						<comment>Le personnage n'oublie presque rien. Il est capable de se souvenir du moindre élément d'une scène vécue plusieurs mois en arrière. Avec le temps, les détails s'estompent à peine, mais les informations les plus importantes pour lui demeurent intactes dans sa mémoire.</comment>
+					</property>
+					<property editable="false" name="Meneur d'Hommes">
+						<comment>Le héros sait commander, imposer le respect et son autorité. Dans le doute, les autres se tournent généralement vers lui pour prendre une décision.</comment>
+					</property>
+					<property editable="false" name="Montagnard">
+						<comment>Le héros est très à l'aise dans ce type de terrain accidenté. Il connaît bien les ressources naturelles de ce milieu et maîtrise toutes les ficelles de l'escalade en montagne.</comment>
+					</property>
+					<property editable="false" name="Réfléchi">
+						<comment>Le personnage aime les jeux d'esprit, les énigmes et tout ce qui lui demande de faire appel à son intellect.</comment>
+					</property>
+					<property editable="false" name="Robuste">
+						<comment>le personnage est très résistant aux conditions extérieures. Le froid, la chaleur, la faim le gênent moins que les autres. Il se montre également bien plus endurant face aux maladies et aux toxines, dont l'alcool.</comment>
+					</property>
+					<property editable="false" name="Sens Aiguisés">
+						<comment>Le personnage est en permanence aux aguets et maîtrise parfaitement ses cinq sens. Difficile de le surprendre ou de trompre sa vigilance.</comment>
+					</property>
+				</propertyChoice>
+				<properties></properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+				<pointPool>Don</pointPool>
+				<args>
+					<arg key="cost">1</arg>
+				</args>
+			</historyFactory>
+		</property>
+		<property editable="true" name="Faiblesse">
+			<propertiesList fixe="false" open="false">
+				<propertyChoice>
+					<property editable="false" name="Amnésique">
+						<comment>Le personnage n'a aucun souvenir de son passé. Il a pu subir un choc, physique ou mental, et perdre ainsi la mémoire.</comment>
+					</property>
+					<property editable="false" name="Arrogant">
+						<comment>Le personnage ne rate pas une occasion d'afficher son mépris envers tous ceux qu'il considère comme inférieurs à lui? C'est-à-dire presque tout le monde.</comment>
+					</property>
+					<property editable="false" name="Brute">
+						<comment>Le personnage n'aucune manière et gère ses relations avex les autres selon un simple rapport de force.</comment>
+					</property>
+					<property editable="false" name="Cruel">
+						<comment>Le personnage aime voir souffrir les autres et ne ressent aucune compassion. Ses relations sociales en sont amoindries dès que les gesn comptent sur lui pour les aider.</comment>
+					</property>
+					<property editable="false" name="Curieux">
+						<comment>Le personnage ne résiste jamais à l'envie d'aller fourrer son nez là où il ne devrait pas. Cette faiblesse risque surtout de lui attirer des ennuis immédiats.</comment>
+					</property>
+					<property editable="false" name="Distrait">
+						<comment>Le personnage a du mal à se concentrer sur un sujet précis. Il est toujours dans la lune et il est facile de le surprendre dans ses rêveries.</comment>
+					</property>
+					<property editable="false" name="Etrange">
+						<comment>Le héros dégage une aura qui met mal à l'aise ses interlocuteurs, dérange les animaux domestiques voire incommode les enfants placés en sa présence.</comment>
+					</property>
+					<property editable="false" name="Faible">
+						<comment>Le personnage s'épuise vite et parfois ses muscles le trahissent, l'empêchant de déployer toute sa (maigre) puissance physique.</comment>
+					</property>
+					<property editable="false" name="Froid">
+						<comment>L'attitude du personnage est constamment distante et livre très peu de lui-même dans ses relations. Ses capacités de séduction et la sympathie qu'il exprime en sont grandement réduites, même s'il est en fait une personne aux qualités humaines incontestables.</comment>
+					</property>
+					<property editable="false" name="Handicapé">
+						<comment>Le héros souffre d'un handicap physique. Par exemple : Pied bot (DEP -1), borgne (malus de -2 aux tests de Perception), manchot (malus de -3 aux tests requérant l'usage des deux mains, unijambiste (DEP/2), bossu (DEP - 1)… Le Meneur de Jeu et le joueur décident ensemble des pénalités des autres handicaps que ceux-ci. De plus, les autres regardent le personnage avec pitié ou mépris.</comment>
+					</property>
+					<property editable="false" name="Hors-la-loi">
+						<comment>Le personnage a été banni d'une contrée ou d'un royaume de la Scandia. S'il y retourne, et qu'on le reconnaît, il risque d'être mis à mort sans autre forme de procès.</comment>
+					</property>
+					<property editable="false" name="Imberbe">
+						<comment>Le personnage, masculin forcément, n'a pas un poil de barbe ce qui fait émettre des doutes sur sa virilité. Les femmes préfèrent la compagnie d'autres hommes, ses compatriotes médisent sur son courage (et ses qualités dans la couche de ses compagnes).</comment>
+					</property>
+					<property editable="false" name="Impétueux">
+						<comment>Le personnage refuse de remettre au lendemain ce qu'il doit accomplir. Dans toute situation, ila tendance à agir avant de réfléchir et ne sait pas faire preuve de patience.</comment>
+					</property>
+					<property editable="false" name="Interdit">
+						<comment>Le héros suit un code personnel et rigide. Jamais il ne le transgressera. Le joueur détermine celui-ci au départ, en accord avec le Meneur de Jeu. Exemples: ne jamais attaquer un ennemi désarmé, ne jamais laisser passer une insulte, ne jamais attaquer une ennemi par surprise, ne jamais manger de viande autre que celle de l'ours ...</comment>
+					</property>
+					<property editable="false" name="Ivrogne">
+						<comment>Le personnage est un incorrigible buveur. Il ne rate jamais une occasion de boire plus que de raison et peut-être de trop parler.</comment>
+					</property>
+					<property editable="false" name="Rigide">
+						<comment>Jamais le héros ne trahira la parole donnée ou celui qu'il reconnait comme son chef. Même si on lui démontre l'inanité d'un tel serment.</comment>
+					</property>
+					<property editable="false" name="Malédiction de Loki">
+						<comment>Le personnage esr doté d'une malchance incroyable. Il perd à tous les jeux de hasard et, dès qu'une mouette survole le groupe au sein duquel il se trouve, c'est toujours son vêtement (au mieux) qui est souillé.</comment>
+					</property>
+					<property editable="false" name="Misogyne/Misandre">
+						<comment>Le personnage doute des capacités des membres du sexe opposé. Il n'est pas forcément aggréssif, plus souvent condescendant voire méprisant.</comment>
+					</property>
+					<property editable="false" name="Naïf">
+						<comment>Le personnage croit facilement tout ce qu'on lui raconte. Il a tendance à faire confiance facilement, même au premier venu.</comment>
+					</property>
+					<property editable="false" name="Paillard">
+						<comment>Le héros ne recherche rien de plus que la satisfaction de la bonne chère, de la boisson et des caresses des femmes. Il ne résiste jamais à l'occasion d'un festin ou d'une nuit de plaisir.</comment>
+					</property>
+					<property editable="false" name="Peur">
+						<comment>Le personnage est effrayé par élément banal en Scandia. En sa présence, il se sent très mal à l'aise (exemples : la nuit, les loups, les femmes, le feu, la mer).</comment>
+					</property>
+					<property editable="false" name="Rancunier">
+						<comment>Le personnage n'oublie jamais une offense, réelle ou supposée. Il se montre odieux avec ceux qu'il juge associés à cette humiliation.</comment>
+					</property>
+					<property editable="false" name="Sang Chaud">
+						<comment>Le personnage ne refuse jamais un défi et s'emporte aisément dès qu'il se sent insulté ou provoqué.</comment>
+					</property>
+					<property editable="false" name="Souffreteux">
+						<comment>Le personnage souffre d'une constitution faible et tombe plus souvent malade que les autres habitants de la Scandia. Il résiste très mal aux effets de l'alcool.</comment>
+					</property>
+					<property editable="false" name="Téméraire">
+						<comment>Le personnage fonce tête baissée face au danger, sans mesurer les risques encourus. Il refuse de considérer les possibilités d'échec de ses actions.</comment>
+					</property>
+					<property editable="false" name="Vendetta">
+						<comment>Le personnage poursuit une vendetta personnelle ou familiale. Il mettra tout en œuvre, quitte à s'aliéner de nouveaux ennemis, pour venger son honneur.</comment>
+					</property>
+				</propertyChoice>
+				<properties></properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+				<pointPool>Don</pointPool>
+				<args>
+					<arg key="cost">-1</arg>
+				</args>
+			</historyFactory>
+		</property>
+		<property editable="false" name="Caractéristiques principales">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property editable="false" name="Corps">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="true" name="Puissance">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+								<property editable="true" name="Vigueur">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+								<property editable="true" name="Agilité">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="Esprit">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="true" name="Intellect">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+								<property editable="true" name="Perception">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+								<property editable="true" name="Tenacité">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="Ame">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="true" name="Charisme">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+								<property editable="true" name="Instinct">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+								<property editable="true" name="Communication">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+									</max>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+				</properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+				<pointPool>Caractéristiques</pointPool>
+				<args></args>
+			</historyFactory>
+		</property>
+		<property editable="false" name="Caractéristiques secondaires">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property editable="false" name="Initiative">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Réaction">
+									<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+								</property>
+								<property editable="false" name="Encombrement">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property editable="false" name="Protection">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property editable="false" name="Magie">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="Défense Physique">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Base">
+									<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+								</property>
+								<property editable="false" name="Encombrement">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property editable="false" name="Protection">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property editable="false" name="Magie">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="Défense Mentale">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Base">
+									<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+								</property>
+								<property editable="false" name="Protection">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property editable="false" name="Magie">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="Reserve de Dés">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+					</property>
+					<property editable="false" name="Points de Vie">
+						<Value class="com.mrprez.gencross.value.IntValue">18</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Seuil Blessé">
+									<Value class="com.mrprez.gencross.value.IntValue">9</Value>
+								</property>
+								<property editable="false" name="Seuil Meurtri">
+									<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+								</property>
+								<property editable="false" name="Seuil Inconscient">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property editable="false" name="Seuil Mort">
+									<Value class="com.mrprez.gencross.value.IntValue">-4</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="Déplacement">
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Normal">
+									<Value class="com.mrprez.gencross.value.IntValue">9</Value>
+								</property>
+								<property editable="false" name="SR10">
+									<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+								</property>
+								<property editable="false" name="SR14">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="Capacité d'ENC">
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Normal">
+									<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+								</property>
+								<property editable="false" name="-3">
+									<Value class="com.mrprez.gencross.value.IntValue">6</Value>
+								</property>
+								<property editable="false" name="+1 Niv">
+									<Value class="com.mrprez.gencross.value.IntValue">9</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property editable="false" name="Compétences">
+			<propertiesList fixe="true" open="true">
+				<propertyChoice>
+					<property editable="true" name="Acrobatie">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Artisanat" specification="">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Arts" specification="">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Attelage">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Chercher">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Chevaucher">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Commerce">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Discrétion">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Eloquence">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Empathie">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Escalade">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Esquive">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Herboristerie">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Intimidation">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Jeux">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Langues*" specification="">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Larcins">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Médecine">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Mouvement">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Navigation">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Natation">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Négociation">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Sagas">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Savoir" specification="">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Séduction">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Superstition">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Survie">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Tactique">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Traditions">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Vigilance">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Runes*">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Galdr*">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Sejdr*">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Armes Courtes">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Armes Longues">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Armes à Deux Mains">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Armes d'Hast">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Armes de Tir">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Lancer">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Lutte">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="true" name="Armes Improvisées">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+				</propertyChoice>
+				<properties></properties>
+				<defaultProperty>
+					<property editable="false" name="???">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">20</Value>
+						</max>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Compétences</pointPool>
+							<args>
+								<arg key="factor">2</arg>
+							</args>
+						</historyFactory>
+					</property>
+				</defaultProperty>
+			</propertiesList>
+		</property>
+		<property editable="false" name="Prouesses Martiales">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice>
+					<property editable="false" name="[Attaque - 1] Aucun Abri Sûr">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<comment>Le Héros peut attaquer une cible retranchée derrière un obstacle, tant qu'il est conscient de sa présence et que l'impact de son projectile peut raisonnablement traverser cette barrière. Ainsi une flèche passe à travers un mur d'osier tressé ou de bois fin. Une hachette peut éclater la paroi d'un tonneau dans lequel se cache un ennemi. En cas de succès, la cible est atteinte par le trait mais ne subit que la moitié des points de dégât normaux sans prendre en compte la valeur de protection de l'obstacle.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 1] Charge Impétueuse">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<comment>Le Héros doit effectuer un déplacement afin d'engager sa cible. Si l'attaque porte, ajoutez la valeur normale de Déplacement du personnage aux dégâts infligés. S'il a passé l'action précédente à courir ou sprinter vers sa cible, et réussi son test de mouvement, ces bonus aux dégâts passent respectivement à DEPx2 (course) ou DEPx3 (sprint).</comment>
+					</property>
+					<property editable="false" name="[Attaque - 1] Coup de Bouclier">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<comment>Le personnage doit être équipé d'un bouclier. S'il vient de réussir une parade, il porte immédiatement une violente riposte à l'aide d'un coup de bouclier contre son adversaire. Cette contre-attaque nécessite la dépense d'une action et reste donc sujette au malus d'action supplémentaire. Il faut également prendre en compte le malus de prouesse (-3). S'il réussit son test d'Armes Improvisées, il inflige à sa victime (PUI + MR + 5) points de dégât.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 1] Sonner">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<comment>Le personnage assène un déluge de coups violents sur son adversaire. Le dessein de l'attaquant consiste à désorienter l'ennemi. Si le coup porte, la victime subit des dégâts normaux. En outre, elle doit immédiatement réussir un test de Ténacité contre un SR Aisé (10) avec un malus égal au montant des dégâts subis. En cas d'échec, la cible passe en mode défensif (pour les figurants, il 'sagit d'un test de Résistance Mental défensif contre ce même SR). Elle ne peut donc plus contre-attaquer pour le restant de ce tour de combat.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Assommer">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le personnage vise la tête de son adversaire et tente de lui asséner un coup puissant, mais contrôlé. Il essaie alors de le plonger dans l'inconscience, sans doute dans le but de le capturer. Si le coup porte, la victime ne subit que la moitié des dégâts infligés, mais elle doit réaliser un test de Vigueur contre un SR moyen (14), avec un malus égal à la Marge de réussite de l'attaque (les figurants lancent simplement 2D10 + Physique). En cas d'échec, elle sombre dans l'inconscience pour 1D10 minutes).</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Briser le Bouclier">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le héros frappe de toutes ses forces le bouclier de l'adversaire. S'il atteint sa cible, il détruit automatiquement cette pièce d'équipement. Le bouclier devient inutilisable et le défenseur voit sa protection diminuer d'autant. Le défenseur ne peut pas parer ce coup, juste l'esquiver.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Comme des Lapins">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le personnage doit faire face à plusieurs adversaires. Tous ne doivent être que des Figurants. Le joueur choisit sa cible principale parmi eux. Si l'attaque est réussie et qu'elle suffit à mettre hors de combat sa victime, il peut immédiatement porter un nouveau coup contre un autre ennemi à portée. Il s'agit d'une action supplémentaire. Aussi, chaque attaque au-delà de la première se voit assortie du modificateur normal d'action suppélmentaire, en plus de celui associé à cette prouesse (-6). Si cette deuxième attaque suffit également pour se débarrasser de ce deuxième PNJ, le héros peut poursuivre cet enchaînement jusqu'à ce qu'il décide volontairement de l'interrompre, qu'il n'ait plus
+							adversaire à portée ou ne puisse abattre sa cible d'un seul coup.
+						</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Coup de Tête">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le héros est engagé dans un corps à corps et vient de réussir une action de parade. Il peut immédiatement dépenser une action afin de riposter à l'aide d'un coup de tête violent sur le visage de son adversaire. Il utilise pour cela la compétence martiale Lutte. En cas de réussite, il inflige (valeur de Puissance + Marge) points de dégâts (ajoutez à ce montant la valeur de protection de son casque s'il en porte un). De plus, sa victime subit un modificateur de +3 à sa prochaine action. Par contre, en cas d'échec critique, le héros perd automatiquement, sans prendre en compte ses protections éventuelles, cinq Points de Vie (-5 PV). Mais en cas de réussite, si l'adversaire porte un casque, celui-ci
+							est fracassé et ne le protège plus. Sinon, doublez les dégâts infligés.
+						</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Désarçonner">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le personnage place un coup puissant afin de faire tomber un adversaire du haut de sa monture. Calculez normalement les dégâts infligés. La victime doit réussir un test de Vigueur + Chevaucher contre un Seuil de Réussite Moyen (14) assorti d'un malus égal au total des dégâts subis (un test de Physique + 2D10 pour les figurants). En cas d'échec, elle chute lourdement au sol et devra consacrer sa prochaine action à se relever ou accpeter de combattre au sol.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Prise de l'Ours">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le héros empoigne son adversaire avec force et l'écrase entre ses bras puissants. La victime peut essayer de se libérer en remportant un test en opposition de Puissance. Il doit consacrer une action à chaque tentative. Tant que la prise est maintenue, l'attaquant inflige automatiquement une perte de (PUIx2) Points de Vie à sa victime, au début de chaque tour de combat. Il ne peut rien faire d'autre durant cette période.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Soumets-Toi !">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le personnage exploite le déséquilibre de l'adversaire pour le jeter au sol. Si la cible ne peut parer ou esquiver cette attaque, elle est projetée à terre, aux pieds du héros. Par contre, elle ne subit que la moitié des dégâts normaux.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Venez à Moi !">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le héros doit faire face à plusieurs adversaires. S'il réussit son attaque, il peut répartir, à sa guise, le montant total des dégâts entre tous les défenseurs. Pour le test d'attaque, prenez en compte la valeur de Défense Physique la plus élevée parmi eux.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 2] Vider les Mains">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le héros enchaîne une série de mouvements et de feintes puis vient violemment frapper le fer ennemi. L'adversaire qui, en réaction, rate une esquive ou une parade, ou n'agit pas, lâche son arme aussitôt. Celle-ci chute à quelques pas de là, 1D5 mètres, dans une direction du choix de l'attaquant.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 3] Fendre le Casque">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<comment>Le personnage sacrifie sa garde pour atteindre l'ennemi d'un coup vicieux à la tête. La Valeur de sa Défense Physique est réduite de deux points (DP -2) pour le reste du tour de combat. S'il réussit son attaque, calculez normalement les dégâts. Le casque est fendu et la valeur de protection de l'armure ennemie est réduite d'autant. En outre, la victime doit réussir un test de Vigueur contre un Seuil de Réussite Aisé (10) assorti d'un malus égale au total des dégâts subis. Si elle échoue, elle est sonnée et passe en mode défensif pour le restant de ce tour de combat (les figurants réalisent un test de Physique + 2D10 contre ce même SR).</comment>
+					</property>
+					<property editable="false" name="[Attaque - 3] Franchir la Ligne Ennemie">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<comment>Le personnage doit effectuer une charge contre au moins trois adversaires groupés. Pour le test d'attaque, prenez en compte la valeur de Défense Physique (ou le Conflit défensif pour des figurants) la plus élevée parmi eux. Si le héros réussit son coup, calculez normalement les dégâts et désignez une seule cible parmi les défenseurs. Le personnage se retrouve à la fin de son action derrière ses ennemis, à une distance égale à la moitié de sa valeur de Déplacement (DEP/2) du personnage.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 3] Impact !">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<comment>Le héros projette son arme de jet avec toute sa force et vise un point précis pour désequilibrer sa cible. Sous l'impact, lorsque celle-ci est touchée, elle se retrouve projettée de PUI mètres en arrière et chute au sol si elle rate un test d'Agilité contre un Seuil de Réussite Moyen (14) assorti d'un malus égal à la totalité des points de dégâts subis un test de Physique +2D10 pour les figurants).</comment>
+					</property>
+					<property editable="false" name="[Attaque - 3] Projectile Humain">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<comment>Le personnage doit avoir réussi et maintenu une Prise de l'Ours dans le tour de combat précédent. Il peut alors jeter sa victime jusqu'à une distance égale à sa Puissance en mètres. Celle-ci subit (PUI x2) points de dégâts dans la manœuvre. Si d'autres ennemis sont pris pour cibles, ceux-ci perdent ce même nombre de Points de Vie et doivent réussir un test d'Agilité contre un Seuil de Réussite Moyen (14) ou chuter au sol (un test de Physique +2D10 pour les figurants). Ce test de réaction ne nécessite pas la dépense d'une action.</comment>
+					</property>
+					<property editable="false" name="[Attaque - 4] Entre les Yeux">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<comment>Le héros réalise un tir très précis et particulièrement mortel. Si le projectile atteint la cible, celle-ci perd immédiatement la moitié des Points de Vie qui lui reste. Les figurants sont tués sur le coup.</comment>
+					</property>
+					<property editable="true" name="[Attaque - 2 à 4] Grêle Mortelle">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+						<comment>Le personnage libère plusieurs projectiles dans le même tir, de deux à quatre selon le niveau de la prouesse (il encoche plusieurs flèches, il saisit deux javelots dans la même main, etc…). Il ne peut cependant viser qu'une seule cible. En cas de réussite, les dégâts infligés sont désormais égaux à (Marge de Réussite + Potentiel l'arme) x Nombre de projectiles. La valeur de protection de la victime s'applique contre chaque trait. On retire donc (Protection x Nombre de projectiles) au montant des dégâts.</comment>
+					</property>
+					<property editable="true" name="[Attaque - 1 à 4] La Charge du Sanglier">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+						<comment>Le personnage se rue en avant et percute violemment son adversaire. Si le joueur réussit son test, la cible ne peut tenter que d'esquiver cette attaque, avec un malus égal à celui de la prouesse (-3, -6, -9 ou -12). Un adversaire atteint par cette attaque perd un nombre de Points de Vie égal à la somme de la Puissance du svinfylkingar, plus la Marge de réussite de l'attaque, plus une base dépendant du niveau de prouesse. Soit : PUI + MR + Base. La base des dégâts est respectivement égale à : +5/+10/+15/+20, pour les niveaux 1 à 4. L'armure s'applique normalement ici. La victime doit réussir un test d'Agilité (SR 14 plus les points de dégâts de l'attaque) ou se retrouver projetée au sol, à
+							(Puissance du svinfylkingar + niveau de la prouesse) mètres en arrière.
+						</comment>
+					</property>
+					<property editable="true" name="[Attaque - 2 à 4] Les Crocs du Loup">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+						<comment>Le héros harcèle son adversaire de coups de lance et le maintient à sa distance. Le joueur réalise, pour une seule action, selon le niveau utilisé, un, deux, trois ou quatre tests d'attaque, assortis du malus de prouesse adéquat. Chaque coup porté efficacement inflige un total de points de dégâts égal à la (Puissance + dégâts de la lance + niveau de la prouesse). La Marge de Réussite n'est pas prise en compte ici.</comment>
+					</property>
+					<property editable="true" name="[Attaque - 1 à 4] Par le Bras de Thor !">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+						<comment>Le personnage invoque le nom du dieu du tonnerre et foudroie son adversaire d'un coup implacable. S'il réussit son attaque, calculez normalement les dégâts. Cependant, lancer autant de dés à 10 faces que le niveau de la prouesse et ajouter le résultat au montant initial des dégâts. Notez que le joueur peut posséder cette prouesse à différents niveaux, mais doit acheter chacun d'eux séparément. Ainsi, il lui en coûte 4 points afin de maîtriser "Par le bras de Thor !" aux niveaux 1 et 3.</comment>
+					</property>
+					<property editable="true" name="[Attaque - 1 à 4] Féroce comme l'Ours">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+						<comment>Le berserkr est totalement habité par sa rage de combat. La lame de sa longue hache virevolte autour de lui et fauche ses ennemis, comme du blé mûr. Le héros bénéficie d'un bonus aux dégâts pour cette attaque dépendant du niveau de prouesse (+5, +10, +15 ou +20). En outre, il rajoute immédiatement de 1 à 4 dés à sa réserve de furor (selon le niveau de la prouesse utilisé). Ce second effet ne s'applique qu'une seule fois par combat. Si le berserkr fait appel à cette prouesse martiale plusieurs fois durant ce combat, il bénéficie toujours du bonus aux dégâts, mais plus de l'augmentation de la réserve de furor.</comment>
+					</property>
+					<property editable="false" name="[Défensive - 1] Feinte de Corps">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<comment>Le personnage effectue une parade et tente de se dégager de la trajectoire de l'attaque ennemie. S'il réussit son coup, la prochaine action de l'adversaire est modifiée par un malus supplémentaire de -3.</comment>
+					</property>
+					<property editable="false" name="[Défensive - 1] Saut du Lynx">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<comment>Le héros se jette de côté et réalise une roulade parfaite. Il se retrouve automatiquement sur ses pieds à la fin de cette manœuvre. Lorsqu'il se relève, il de nouveau au contact de son adversaire et peut poursuivre le combat au corps à corps. Si le héros utilise cette prouesse afin d'échapper à un projectile, il parcourt alors une distance égale à moitié de sa valeur de Déplacement (DEP/2), dans la direction de son choix.</comment>
+					</property>
+					<property editable="false" name="[Défensive - 2] A toi !">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le personnage doit se trouver au contact de plusieurs adversaires. Il dépense une action pour réaliser une esquive face à un coup qui menace de l'atteindre. S'il la réussit, il reste sur place, sans chuter, et laisse juste passer l'attaque sans qu'elle l'atteigne. Par contre, celle-ci touche automatiquement un autre de ses adversaires qui subit la moitié des dégâts normaux.</comment>
+					</property>
+					<property editable="false" name="[Défensive - 2] Défense de Fer !">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le héros doit faire face à plusieurs adversaires. Il dépense une seule action pour parer deux attaques le prenant pour cible, et venant de deux ennemis différents, dans la même ronde. Le joueur effectue chaque test de parade avec un éventuel modificateur d'acction supplémentaire, en plus du malus de prouesse égale à -6.</comment>
+					</property>
+					<property editable="false" name="[Défensive - 3] Mur de Fer">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<comment>Le héros balaie l'espace devant lui avec son arme, créant un véritable rempart de métal entre son adversaire et lui. S'il réussit sa parade, il ne dépense pas son action. En cas d'échec, l'action est dépensée normalement.</comment>
+					</property>
+					<property editable="false" name="[Défensive - 3] Ni d'Estoc, ni de Taille">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<comment>Le héros dépense une action pour parer une attaque adverse. Durant le restant de ce tour de combat, il peut réaliser une seconde parade sans que cela ne lui demande de sacrifier une nouvelle action. Cette seconde défense fait partie d'un enchaînement entamé avec la première. Aussi, il effectue son test sans prendre en compte de modificateur d'action supplémentaire (mais avec le malus de prouesse -9). Cette seconde parade n'apparaît pas dans le décompte des actions de ce tour. Cette défense ne permet que de se garder d'un coup. Il est impossible d'anchaîner une contre-attaque ensuite.</comment>
+					</property>
+					<property editable="true" name="[Défensive - 2 à 4] Blocage">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+						<comment>Le personnage réalise une parade puissante et bloque l'arme adverse. S'il réussit son test, l'adversaire ne peut pas attaquer lors de sa prochaine action, durant ce tour de combat ou le suivant. Celui-ci peut utiliser cette action pour réaliser autre chose, mais pas une attaque. Si le héros échoue, il réduit tout de même les dégâts occasionnés par cette attaque de 2, 4 ou 6 points selon le niveau de la prouesse.</comment>
+					</property>
+					<property editable="false" name="[Utilitaire - 1] Hurlement Sanguinaire">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<comment>Le héros se jette en hurlant sur son adversaire. Il réalise aussitôt un test de Charisme + Intimidation contre un Seuil de Réussite Moyen (14) augmenté de la Défense Mentale de sa cible (ou de Magique/passif pour un figurant). Ce test ne nécessite pas la dépense d'une action et s'effectue juste avant l'attaque. En cas de succès, la Défense Physique adverse (ou la valeur de Conflit/défensif pour un figurant) est diminuée de la valeur de Charisme du héros (minimum zéro) pour le reste de ce combat.</comment>
+					</property>
+					<property editable="false" name="[Utilitaire - 1] Rapide comme la Foudre">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<comment>Le personnage change brusquemment de rythme dans le combat et modifie sa position pour prendre l'avantage sur son adversaire. Le joueur dépense une action et réalise un test de Mouvement contre un seuil de Réussite Moyen (14) plus la Défense Physique (ou le Conflit/défensif) d'un ennemi qui détient l'initiative sur lui (sans oublier le malus de -3 lié à la prouesse); En cas de succès, dès l'action suivante, le héros échange son rang d'initiative avec celui de son adversaire. Cette nouvelle valeur est utilisée pour tout le reste du combat, contre cet ennemi comme contre d'autres.</comment>
+					</property>
+					<property editable="false" name="[Utilitaire - 2] Ralliez-vous à moi">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<comment>Le héros rameute ses troupes; Sur le champ de bataille, il sonne du cor, bat le rappel et regroupe ses homme sautour de lui. Le joueur réalise un test d'Intellectuel + Tactique + modificateurs. En cas de réussite, tous les alliés à portée de voix du héros bénéficient d'un bonus de +5 à toutes leurs actions lors de ce tour de combat. Lui même ne peut entreprendre aucune autre action que cette prouesse durant de ce laps de temps.</comment>
+					</property>
+					<property editable="false" name="[Utilitaire - 3] Rugissement de Fenrir">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<comment>Le joueur dépense une action pour réaliser un test d'Intimidation. Le héros pousse un rugissement féroce qui résonne sur le champ de bataille comme un appel funeste. Tous les adversaires à portée de voix doivent effectuer un test en opposition de Ténacité + Défense Mentale (ou Mystique/passif) contre un seuil de Réussite égale au résultat du test du personnage. En cas d'échec, ils subissent un modificateur égal à la valeur de Charisme du héros à toute action entreprise contre lui pour toute la durée du combat.</comment>
+					</property>
+					<property editable="false" name="[Utilitaire - 4] Pas encore mort">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<comment>Si le héros atteint le stade "Mort", il peut, à chaque nouveau tour de combat, effectuer un test de Ténacité contre un Seuil de Réussite de base Moyen (14). Il applique à son test les différents modificateurs habituels de combat, mais pas les malus de blessure, seulement celui dû à la prouesse (-12). De plus, s'il est épuisé, il ne garde normalement qu'un seul dé. S'il réussit son test, le personnage peut agir normalement ce tour-ci. Il ne subit plus de perte de Points de Vie supplémentaires tant qu'il bénéficie de cet effet. Dès qu'il échoue, ou dès que le combat se termine, le héros s'écroule et trépasse.</comment>
+					</property>
+					<property editable="true" name="[Utilitaire - 1 à 4] Inspiré par Odhinn">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+						<comment>Le personnage invoque le pouvoir du père des Ases pour soutenir son combat. Le joueur réalise un test d'Instinct contre un Seuil de Réussite Moyen (14) plus le modificateur dû au niveau de la prouesse. S'il réussit, tous les prochains tests de Ténacité réalisés durant ce combat bénéficient d'un bonus de +3/+6/+9/+12 (selon le niveau de la prouesse). Inspiré par Odhinn, il ne craint plus la mort car il sait que les Valkyries viendront le chercher afin de l'emporter vers la Valhöll et la demeure du Père de la Victoire.</comment>
+					</property>
+				</propertyChoice>
+				<properties></properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+				<pointPool>Prouesses et Magie</pointPool>
+				<args>
+					<arg key="factor">3</arg>
+				</args>
+			</historyFactory>
+		</property>
+		<property editable="false" name="Magie - Sejdr">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice>
+					<property editable="false" name="[Sejdr - 1] Sinistres Présages">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Ce que Murmurent les Os">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Songes Divinatoires">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Prophétie">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Dormir Sur le Tertre">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Renforcement de Protections">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Amélioration de la Défense Physique">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Amélioration de la Défense Physique d'Autrui">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Renforcement des Armes">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Augmentation de la Santé">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Amélioration des Protections">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Augmentation de la Santé d'Autrui">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Augmentation de la Réserve de Dés">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Amélioration des Armes">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Augmentation de la Réserve de dés d'autrui">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Augmentation de la Défense Physique">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Les Mains qui Soignent">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Stabilisation">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Libérer de la Peur">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Guérison des Maladies Mineures">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Protection contre les Envoûtements">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Préparation de Baumes">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Stabilisation des Hémorragies">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Sortir de l'Epuisement">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Regagner des Dés de Réserve">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Soins Modérés">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Annulation d'envoûtement mineur sur un Objet">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Soigner Empoisonnement">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Préparation de Potion">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Guérison des Maladies Modérées">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Récupération Totale">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Annulation d'un Envoûtement mineur sur une personne">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 5] Baume de Récupération Totale">
+						<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 5] Guérison des Maladies Graves">
+						<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Maîtriser le Brouillard">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Maîtriser les Vents Légers">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 1] Invoquer la Pluie">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Ouvrir le Lit d'une Rivière">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Créer/Lever Obscurité">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Maîtriser la Pluie">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Ouvrir le Lit d'un Fleuve">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Maîtriser les Vents Violents">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Créer une Tempête de Neige">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Glissement de Terrain">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Détourner le lit d'une Rivière ou d'un Fleuve">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 5] Créer/Calmer un Tremblement de Terre">
+						<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 2] Rêves Sinistres">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 3] Faire Naître la Confusion">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 4] Pris de Folie">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Sejdr - 5] La Chevauchée de Mara">
+						<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+				</propertyChoice>
+				<properties></properties>
+			</propertiesList>
+		</property>
+		<property editable="false" name="Magie - Galdr">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice>
+					<property editable="false" name="[Galdr - 1] Illusion - Ouïe">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 2] Illusion - Vue">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 3] Illusion - Odorat">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 4] Illusion - Goût">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 5] Illusion - Toucher">
+						<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 1] Eléments - Sommeil">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 2] Eléments - Séduire">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 3] Eléments - Charmer les Animaux">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 4] Eléments - Charmer des Humains">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Galdr - 5] Eléments - Charmer des Créatures">
+						<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="cost">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+				</propertyChoice>
+				<properties></properties>
+			</propertiesList>
+		</property>
+		<property editable="false" name="Magie - Runes">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice>
+					<property editable="false" name="[Runes - 1] Kaun">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 1] Reith">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 1] Sôl">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 1] Tiwaz">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 2] Algiz">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 2] Fehu">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 2] Jera">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 2] Ingvi">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 2] Wunjô">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Ansuz">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Bjarken">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Dagaz">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Gebô">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Isa">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Mathr">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Othal">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Perth">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 3] Uruz">
+						<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 4] Hagall">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 4] Lôgr">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 4] Nauthr">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 4] Thurz">
+						<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 5] Ehwaz">
+						<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property editable="false" name="[Runes - 5] Iwaz">
+						<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+						<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+							<pointPool>Prouesses et Magie</pointPool>
+							<args>
+								<arg key="factor">3</arg>
+							</args>
+						</historyFactory>
+					</property>
+				</propertyChoice>
+				<properties></properties>
+			</propertiesList>
+		</property>
+		<property editable="false" name="Armes et Armures">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property editable="false" name="Armes">
+						<propertiesList fixe="false" open="true">
+							<propertyChoice>
+								<property editable="false" name="[Courtes] Poignard">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">9</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue" offset="0.1">0.5</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Courtes] Hachette">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">8</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">0.3</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Longues] Epée Courte">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">5</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">11</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">2</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Longues] Epée Longue">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">7</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">11</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">4</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Longues] Hache de Guerre">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">9</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">10</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">1</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[2 mains] Longue Hache">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">14</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">12</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">3</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[2 mains] Epée à 2 Mains">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">12</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">14</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">5</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Hast] Lance">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">10</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">11</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">4</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Jet] Javeline">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">6</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">7</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">0.4</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Jet] Poignard">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">9</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">0.5</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Jet] Hache de Jet">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">8</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">0.3</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Jet] Lance">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">8</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">11</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">4</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Tir] Arc de Chasse">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">6</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">8</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">1</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Tir] Arc de Guerre">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">7</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">10</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">2</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+								<property editable="false" name="[Tir] Fronde">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="false" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+											</property>
+											<property editable="false" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">12</Value>
+											</property>
+											<property editable="false" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="false" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue">0.1</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+							</propertyChoice>
+							<properties></properties>
+							<defaultProperty>
+								<property editable="false" name="???">
+									<propertiesList fixe="true" open="false">
+										<properties>
+											<property editable="true" name="Dégâts">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="true" name="Solidité">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="true" name="Encombrement">
+												<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+											</property>
+											<property editable="true" name="Valeur">
+												<Value class="com.mrprez.gencross.value.DoubleValue" offset="0.1">0</Value>
+											</property>
+										</properties>
+									</propertiesList>
+								</property>
+							</defaultProperty>
+						</propertiesList>
+					</property>
+				</properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.FreeHistoryFactory">
+				<pointPool></pointPool>
+				<args></args>
+			</historyFactory>
+		</property>
+	</properties>
+	<beforeChangeValueListeners></beforeChangeValueListeners>
+	<afterChangeValueListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Archétype</pattern>
+			<arg name="method">changeArchetype</arg>
+		</listener>
+	</afterChangeValueListeners>
+	<beforeAddPropertyListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeAddPropertyListener">
+			<pattern>Faiblesse#[^#]*</pattern>
+			<arg name="method">addFaiblesse</arg>
+		</listener>
+	</beforeAddPropertyListeners>
+	<afterAddPropertyListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterAddPropertyListener">
+			<pattern>Don[(]s[)]#[^#]*</pattern>
+			<arg name="method">addOrRemoveDon</arg>
+		</listener>
+	</afterAddPropertyListeners>
+	<beforeDeletePropertyListeners></beforeDeletePropertyListeners>
+	<afterDeletePropertyListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterDeletePropertyListener">
+			<pattern>Don[(]s[)]#[^#]*</pattern>
+			<arg name="method">addOrRemoveDon</arg>
+		</listener>
+	</afterDeletePropertyListeners>
+	<passToNextPhaseListeners></passToNextPhaseListeners>
+	<formulas>
+		<formula>Caractéristiques principales#Corps=#Caractéristiques principales#Corps#Puissance# + #Caractéristiques principales#Corps#Vigueur# + #Caractéristiques principales#Corps#Agilité#</formula>
+		<formula>Caractéristiques principales#Esprit=#Caractéristiques principales#Esprit#Intellect# + #Caractéristiques principales#Esprit#Perception# + #Caractéristiques principales#Esprit#Tenacité#</formula>
+		<formula>Caractéristiques principales#Ame=#Caractéristiques principales#Ame#Instinct# + #Caractéristiques principales#Ame#Charisme# + #Caractéristiques principales#Ame#Communication#</formula>
+		<formula>Caractéristiques secondaires#Initiative#Réaction=#Caractéristiques principales#Esprit#Intellect# + #Caractéristiques principales#Esprit#Perception# + #Caractéristiques principales#Ame#Instinct#</formula>
+		<formula>Caractéristiques secondaires#Initiative=#Caractéristiques secondaires#Initiative#Réaction# + #Caractéristiques secondaires#Initiative#Encombrement# + #Caractéristiques secondaires#Initiative#Protection# + #Caractéristiques secondaires#Initiative#Magie#</formula>
+		<formula>Caractéristiques secondaires#Défense Physique#Base=#Caractéristiques principales#Corps#Vigueur# + #Caractéristiques principales#Corps#Agilité# + #Caractéristiques principales#Ame#Instinct#</formula>
+		<formula>Caractéristiques secondaires#Défense Physique=#Caractéristiques secondaires#Défense Physique#Base# + #Caractéristiques secondaires#Défense Physique#Encombrement# + #Caractéristiques secondaires#Défense Physique#Protection# + #Caractéristiques secondaires#Défense Physique#Magie#</formula>
+		<formula>Caractéristiques secondaires#Défense Mentale#Base=#Caractéristiques principales#Esprit#Intellect# + #Caractéristiques principales#Esprit#Tenacité# + #Caractéristiques principales#Ame#Instinct#</formula>
+		<formula>Caractéristiques secondaires#Défense Mentale=#Caractéristiques secondaires#Défense Mentale#Base# + #Caractéristiques secondaires#Défense Mentale#Protection# + #Caractéristiques secondaires#Défense Mentale#Magie#</formula>
+		<formula>Caractéristiques secondaires#Points de Vie= 3 * #Caractéristiques principales#Corps# + 2 * #Caractéristiques principales#Esprit# + #Caractéristiques principales#Ame#</formula>
+		<formula>Caractéristiques secondaires#Points de Vie#Seuil Blessé=#Caractéristiques secondaires#Points de Vie# / 2</formula>
+		<formula>Caractéristiques secondaires#Points de Vie#Seuil Meurtri=#Caractéristiques secondaires#Points de Vie# / 4</formula>
+		<formula>Caractéristiques secondaires#Points de Vie#Seuil Mort=0 - #Caractéristiques secondaires#Points de Vie#Seuil Meurtri#</formula>
+		<formula>Caractéristiques secondaires#Déplacement#Normal=#Caractéristiques principales#Corps#Vigueur# + #Caractéristiques principales#Corps#Agilité#</formula>
+		<formula>Caractéristiques secondaires#Déplacement#SR10=#Caractéristiques secondaires#Déplacement#Normal# * 2</formula>
+		<formula>Caractéristiques secondaires#Déplacement#SR14=#Caractéristiques secondaires#Déplacement#Normal# * 3</formula>
+		<formula>Caractéristiques secondaires#Capacité d'ENC#Normal=2 * #Caractéristiques principales#Corps#Puissance# + #Caractéristiques principales#Corps#Vigueur#</formula>
+		<formula>Caractéristiques secondaires#Capacité d'ENC#-3=2 * #Caractéristiques secondaires#Capacité d'ENC#Normal#</formula>
+		<formula>Caractéristiques secondaires#Capacité d'ENC#+1 Niv=3 * #Caractéristiques secondaires#Capacité d'ENC#Normal#</formula>
+		<formula>Caractéristiques secondaires#Reserve de Dés= ( #Caractéristiques principales#Corps#Vigueur# + #Caractéristiques principales#Esprit#Tenacité# + #Caractéristiques principales#Ame#Instinct# ) / 2</formula>
+	</formulas>
+	<history></history>
+</personnage>

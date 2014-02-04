@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="genCross.plugin.name">Yggdrasill</entry>
+	<entry key="genCross.plugin.className">com.mrprez.gencross.impl.yggdrasill.Yggdrasill</entry>
+	<entry key="genCross.plugin.gcrFileName">com/mrprez/gencross/impl/yggdrasill/Yggdrasill.gcr</entry>
+	<entry key="genCross.plugin.appendixFileName">com/mrprez/gencross/impl/yggdrasill/Yggdrasill.properties</entry>
+	<entry key="genCross.plugin.helpFileName">com/mrprez/gencross/impl/yggdrasill/Yggdrasill.doc</entry>
+	<entry key="genCross.plugin.version">1.2</entry>
+
+</properties>
+
