@@ -18,7 +18,7 @@
 	
 	<scm>
 		<connection>scm:git:git://github.com/gencross-plugins/yggdrasill.git</connection>
-		<developerConnection>scm:git@github.com:gencross-plugins/yggdrasill.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:gencross-plugins/yggdrasill.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	
